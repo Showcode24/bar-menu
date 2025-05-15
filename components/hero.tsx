@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { ChevronDown } from "lucide-react"
+import Image from "next/image"
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -40,10 +41,7 @@ export default function Hero() {
           className="mb-6"
         >
           <div className="w-20 h-20 mx-auto mb-4">
-            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="50" cy="50" r="45" stroke="#F59E0B" strokeWidth="2" />
-              <path d="M30 35H70M35 65H65M40 35V65M60 35V65" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" />
-            </svg>
+            <Image src="/images/docker-logo.png" alt="Docker Bar Logo" width={100} height={100} />
           </div>
         </motion.div>
 

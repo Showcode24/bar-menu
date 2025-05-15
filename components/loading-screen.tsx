@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 export default function LoadingScreen() {
   // Letter animation variants
@@ -49,30 +50,8 @@ export default function LoadingScreen() {
 
   return (
     <div className="fixed inset-0 bg-black flex flex-col items-center justify-center z-50">
-      <motion.div initial="hidden" animate="visible" variants={logoVariants} className="mb-6">
-        <div className="w-20 h-20 mx-auto">
-          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <motion.circle
-              cx="50"
-              cy="50"
-              r="45"
-              stroke="#F59E0B"
-              strokeWidth="2"
-              initial={{ pathLength: 0, opacity: 0 }}
-              animate={{ pathLength: 1, opacity: 1 }}
-              transition={{ delay: 0.2, duration: 1.5, ease: "easeInOut" }}
-            />
-            <motion.path
-              d="M30 35H70M35 65H65M40 35V65M60 35V65"
-              stroke="#F59E0B"
-              strokeWidth="2"
-              strokeLinecap="round"
-              initial={{ pathLength: 0, opacity: 0 }}
-              animate={{ pathLength: 1, opacity: 1 }}
-              transition={{ delay: 0.8, duration: 1.2, ease: "easeInOut" }}
-            />
-          </svg>
-        </div>
+      <motion.div initial="hidden" animate="visible" variants={logoVariants} className="mb-6 relative w-20 h-20">
+        <Image src="/images/docker-logo.png" alt="Docker Bar Logo" fill className="object-contain" priority />
       </motion.div>
 
       <div className="flex justify-center mb-4">

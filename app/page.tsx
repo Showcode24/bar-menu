@@ -30,10 +30,10 @@ export default function Home() {
     "lagers",
     "spirits",
     "bitters",
-    "cocktails",
+    // "cocktails",
     "wines",
     "non-alcoholic",
-    "traditional",
+    // "traditional",
   ]
 
   // Handle scroll events
