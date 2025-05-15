@@ -363,48 +363,48 @@ export const drinks: Drink[] = [
   // },
 
   // TRADITIONAL / LOCAL FAVORITES
-  {
-    id: "trad-1",
-    name: "Zobo",
-    description:
-      "A popular Nigerian drink made from dried hibiscus flowers. Refreshing with a tart, cranberry-like flavor.",
-    price: 400,
-    category: "traditional",
-    image: "/images/zobo.png",
-    tags: ["Hibiscus", "Refreshing"],
-    ingredients: ["Dried hibiscus flowers", "Pineapple", "Ginger", "Cloves", "Sugar"],
-    popular: true,
-  },
-  {
-    id: "trad-2",
-    name: "Palm Wine",
-    description:
-      "A traditional Nigerian alcoholic beverage made from the sap of palm trees. Sweet, milky, and mildly alcoholic when fresh.",
-    price: 1000,
-    category: "traditional",
-    image: "/images/palm-wine.png",
-    tags: ["Fermented", "Traditional"],
-    popular: true,
-  },
-  {
-    id: "trad-3",
-    name: "Kunu",
-    description:
-      "A popular Nigerian beverage made from millet or sorghum. Refreshing with a slightly sweet, nutty flavor.",
-    price: 400,
-    category: "traditional",
-    image: "/images/kunu.png",
-    tags: ["Grain", "Refreshing"],
-    ingredients: ["Millet", "Ginger", "Cloves", "Sugar"],
-  },
-  {
-    id: "trad-4",
-    name: "Fresh Coconut Water",
-    description:
-      "Natural coconut water served directly from the coconut. Hydrating, refreshing, and full of electrolytes.",
-    price: 800,
-    category: "traditional",
-    image: "/images/coconut-water.png",
-    tags: ["Natural", "Hydrating"],
-  },
+  // {
+  //   id: "trad-1",
+  //   name: "Zobo",
+  //   description:
+  //     "A popular Nigerian drink made from dried hibiscus flowers. Refreshing with a tart, cranberry-like flavor.",
+  //   price: 400,
+  //   category: "traditional",
+  //   image: "/images/zobo.png",
+  //   tags: ["Hibiscus", "Refreshing"],
+  //   ingredients: ["Dried hibiscus flowers", "Pineapple", "Ginger", "Cloves", "Sugar"],
+  //   popular: true,
+  // },
+  // {
+  //   id: "trad-2",
+  //   name: "Palm Wine",
+  //   description:
+  //     "A traditional Nigerian alcoholic beverage made from the sap of palm trees. Sweet, milky, and mildly alcoholic when fresh.",
+  //   price: 1000,
+  //   category: "traditional",
+  //   image: "/images/palm-wine.png",
+  //   tags: ["Fermented", "Traditional"],
+  //   popular: true,
+  // },
+  // {
+  //   id: "trad-3",
+  //   name: "Kunu",
+  //   description:
+  //     "A popular Nigerian beverage made from millet or sorghum. Refreshing with a slightly sweet, nutty flavor.",
+  //   price: 400,
+  //   category: "traditional",
+  //   image: "/images/kunu.png",
+  //   tags: ["Grain", "Refreshing"],
+  //   ingredients: ["Millet", "Ginger", "Cloves", "Sugar"],
+  // },
+  // {
+  //   id: "trad-4",
+  //   name: "Fresh Coconut Water",
+  //   description:
+  //     "Natural coconut water served directly from the coconut. Hydrating, refreshing, and full of electrolytes.",
+  //   price: 800,
+  //   category: "traditional",
+  //   image: "/images/coconut-water.png",
+  //   tags: ["Natural", "Hydrating"],
+  // },
 ]
