@@ -30,10 +30,13 @@ export default function Home() {
     "lagers",
     "spirits",
     "bitters",
+    "soup",
+    "grill",
+    "finger-foods",
     // "cocktails",
     "wines",
     "non-alcoholic",
-    // "traditional",
+    "traditional",
   ]
 
   // Handle scroll events
@@ -141,7 +144,13 @@ export default function Home() {
         return "Malts & Non-Alcoholic Drinks"
       case "traditional":
         return "Traditional Favorites"
+      case "soup":
+        return "Soup"
       default:
+      case "grill":
+        return "Grill"
+      case "finger-foods":
+        return "Finger Foods"
         return category.charAt(0).toUpperCase() + category.slice(1)
     }
   }

@@ -1,4 +1,4 @@
-export type DrinkCategory = "lagers" | "spirits" | "bitters" | "cocktails" | "wines" | "non-alcoholic" | "traditional"
+export type DrinkCategory = "lagers" | "spirits" | "bitters" | "cocktails" | "wines" | "non-alcoholic" | "traditional" | "soup" | "grill" | "finger-foods"
 
 export interface Drink {
   id: string
