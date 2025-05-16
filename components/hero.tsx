@@ -41,7 +41,7 @@ export default function Hero() {
           className="mb-6"
         >
           <div className="w-20 h-20 mx-auto mb-4">
-            <Image src="/images/docker-logo.png" alt="Docker Bar Logo" width={100} height={100} />
+            <Image src="/images/DOCKER-logo.png" alt="DOCKER Bar Logo" width={100} height={100} />
           </div>
         </motion.div>
 
@@ -51,7 +51,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-4xl md:text-5xl font-bold mb-4 tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500"
         >
-          DOCKER BAR
+          DOCKERS' BAR
         </motion.h1>
 
         <motion.div

@@ -14,26 +14,26 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "DOCKER BAR | Premium Nigerian Drinks Experience",
-  description: "Explore our signature drinks and cocktails at DOCKER BAR, a premium Nigerian bar experience.",
+  title: "DOCKERS' BAR | Premium Nigerian Drinks Experience",
+  description: "Explore our signature drinks and cocktails at DOCKERS' BAR, a premium Nigerian bar experience.",
   keywords: "bar, cocktails, drinks, menu, premium, luxury, Nigerian, Lagos",
   openGraph: {
-    title: "DOCKER BAR | Premium Nigerian Drinks Experience",
-    description: "Explore our signature drinks and cocktails at DOCKER BAR, a premium Nigerian bar experience.",
-    url: "https://docker-bar.vercel.app",
-    siteName: "DOCKER BAR",
+    title: "DOCKERS' BAR | Premium Nigerian Drinks Experience",
+    description: "Explore our signature drinks and cocktails at DOCKERS' BAR, a premium Nigerian bar experience.",
+    url: "https://DOCKERS'-bar.vercel.app",
+    siteName: "DOCKERS' BAR",
     images: [
       {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "DOCKER BAR",
+        alt: "DOCKERS' BAR",
       },
     ],
     locale: "en_US",
     type: "website",
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({

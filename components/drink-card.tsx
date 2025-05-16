@@ -89,9 +89,8 @@ export default function DrinkCard({
         variants={variants}
         whileTap={{ scale: 0.98 }}
         onClick={() => setIsDetailsOpen(true)}
-        className={`bg-zinc-900/80 backdrop-blur-sm rounded-2xl overflow-hidden h-full flex flex-col shadow-lg border border-zinc-800 active:shadow-inner transition-all duration-300 ${
-          isSelected ? "z-10 scale-[1.02] transition-all duration-500" : ""
-        }`}
+        className={`bg-zinc-900/80 backdrop-blur-sm rounded-2xl overflow-hidden h-full flex flex-col shadow-lg border border-zinc-800 active:shadow-inner transition-all duration-300 ${isSelected ? "z-10 scale-[1.02] transition-all duration-500" : ""
+          }`}
         id={`drink-${drink.id}`}
       >
         <div className="relative h-48 sm:h-56 bg-gradient-to-b from-amber-900/20 to-black/40">
@@ -110,7 +109,7 @@ export default function DrinkCard({
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent"></div>
 
           <div className="absolute top-3 right-3 bg-amber-500 text-black font-bold px-3 py-1 rounded-full text-sm">
-            ${drink.price.toFixed(2)}
+            NGN{drink.price}
           </div>
 
           {drink.popular && (
@@ -160,7 +159,7 @@ export default function DrinkCard({
               <div className="flex justify-between items-start mb-4">
                 <h2 className="text-2xl font-bold text-white">{drink.name}</h2>
                 <span className="bg-amber-500 text-black font-bold px-3 py-1 rounded-full text-sm">
-                  ${drink.price.toFixed(2)}
+                  NGN{drink.price.toFixed(2)}
                 </span>
               </div>
 

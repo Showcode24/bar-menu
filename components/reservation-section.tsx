@@ -39,7 +39,7 @@ export default function ReservationSection() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-amber-500">Reservations</h2>
           <div className="h-px w-24 bg-amber-500/30 mx-auto mb-6"></div>
           <p className="text-zinc-300 max-w-2xl mx-auto">
-            Reserve your table at DOCKER BAR for an unforgettable evening of premium cocktails and exceptional service.
+            Reserve your table at DOCKERS' BAR for an unforgettable evening of premium cocktails and exceptional service.
           </p>
         </motion.div>
 
@@ -54,7 +54,7 @@ export default function ReservationSection() {
               <Calendar className="text-amber-500" size={24} />
             </div>
             <h3 className="text-xl font-bold mb-2 text-white">Choose a Date</h3>
-            <p className="text-zinc-400 text-sm">Select your preferred date for your visit to DOCKER BAR.</p>
+            <p className="text-zinc-400 text-sm">Select your preferred date for your visit to DOCKERS' BAR.</p>
           </div>
 
           <div className="bg-zinc-900/50 backdrop-blur-sm p-6 rounded-xl border border-zinc-800 flex flex-col items-center text-center">

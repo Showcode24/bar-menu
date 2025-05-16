@@ -15,7 +15,7 @@ interface TourStep {
 const tourSteps: TourStep[] = [
   {
     target: "body",
-    title: "Welcome to Docker Bar!",
+    title: "Welcome to DOCKERS' Bar!",
     content: "Let's take a quick tour to help you get started with our digital menu.",
     placement: "center",
   },

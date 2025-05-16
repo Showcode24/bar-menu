@@ -141,7 +141,7 @@ export default function Home() {
       case "wines":
         return "Wines"
       case "non-alcoholic":
-        return "Malts & Non-Alcoholic Drinks"
+        return "Non-Alcoholic Drinks"
       case "traditional":
         return "Traditional Favorites"
       case "soup":
