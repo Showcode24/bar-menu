@@ -51,9 +51,9 @@ export default function Footer() {
         >
           <p className="text-zinc-300 mb-1">Ahmadu Bello way, Victoria Island, Lagos</p>
           <p className="text-zinc-400 mb-2">Open 6PM - 2AM</p>
-          <a href="tel:+15551234567" className="text-amber-500 font-medium">
+          {/* <a href="tel:+15551234567" className="text-amber-500 font-medium">
             +1 (555) 123-4567
-          </a>
+          </a> */}
         </motion.div>
 
         <motion.div
