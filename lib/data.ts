@@ -51,7 +51,7 @@ export const drinks: Drink[] = [
 id: "wine-1",
 name: "J&W",
 description: "A smooth non-alcoholic sparkling red wine alternative with fruity and floral notes. Ideal for celebrations without the alcohol.",
-price: 10000,
+price: 12000,
 category: "wines",
 image: "/images/j_w.png",
 tags: ["Non-Alcoholic", "Sparkling"],
