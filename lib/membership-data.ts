@@ -1,0 +1,120 @@
+export const memberships = [
+  {
+    id: 1,
+    name: "Bronze Member",
+    description: "Weekday access (Mon–Thurs) before 7 PM",
+    image: "https://t4.ftcdn.net/jpg/07/04/12/35/360_F_704123592_i2FAKcWXmm1VE5WzqTjqVGCT5ldXOpDF.jpg",
+    price: 600000,
+    category: "Membership",
+    features: [
+      "Invitations to select public events",
+      "5% discount on signature cocktails",
+      "Priority placement on guest lists for non-member events",
+      "Access to seasonal newsletters and exclusive promotions",
+      "Early access to limited-time drink menus and seasonal offerings",
+      "Complimentary birthday cocktail or dessert",
+      "Access to member-only social mixers (monthly or quarterly)",
+      "10% discount on bar merchandise",
+      "Earn reward points with every visit or purchase",
+      "Member referral perks"
+    ],
+    popular: false,
+    tags: ["Social Guest"]
+  },
+  {
+    id: 2,
+    name: "Silver Member",
+    description: "Full week access (priority on non-peak nights)",
+    image: "https://media.istockphoto.com/id/1456168733/photo/silver-bars-1000-grams-pure-silver-business-investment-and-wealth-concept-wealth-of-silver-3d.jpg?s=612x612&w=0&k=20&c=exUCSNz0tfiq7LgaqEUHbKm1B1bqS-PQ_JmP4tE-WmA=",
+    price: 750000,
+    category: "Membership",
+    features: [
+      "10% discount on all drinks and bar menu",
+      "Early bird access to event tickets",
+      "Complimentary birthday cocktail",
+      "Members-only seating zone (when available)",
+      "Invitation to quarterly members' mixers",
+      "Reserved seating privileges on weeknights",
+      "Priority access to tastings and pairing events",
+      "Complimentary welcome drink for guests you bring",
+      "Access to members-only digital lounge",
+      "Exclusive 'Member’s Hour' offers",
+      "Monthly cocktail recommendation from head mixologist",
+      "Freeze membership once per year",
+      "Recognition on member appreciation nights"
+    ],
+    popular: true,
+    tags: ["Preferred Patron", "Best Seller"]
+  },
+  {
+    id: 3,
+    name: "Gold Member",
+    description: "Full access including peak hours and weekends",
+    image: "https://png.pngtree.com/background/20230527/original/pngtree-pile-of-gold-bars-against-a-black-surface-picture-image_2753427.jpg",
+    price: 1000000,
+    category: "Membership",
+    features: [
+      "15% discount on entire tab",
+      "Complimentary bottle per quarter",
+      "Priority table booking & concierge reservations",
+      "Private tastings or mixology sessions",
+      "Members-only menu & off-menu items",
+      "Bring up a guest free of charge on weekends",
+      "Custom bar locker with engraved nameplate",
+      "Invitations to VIP-only soirées",
+      "Dedicated relationship manager",
+      "First-access to limited release spirits",
+      "Personalized cocktail added to menu quarterly",
+      "Anniversary recognition gift or experience",
+      "Complimentary valet or reserved parking",
+      "Exclusive travel or partner perks",
+      "Annual guest pass bundle",
+      "Invitation to Annual Members Gala"
+    ],
+    popular: true,
+    tags: ["Inner Circle"]
+  },
+  {
+    id: 4,
+    name: "Platinum Member",
+    description: "Unlimited, 24/7 lounge/bar access and elite events",
+    image: "https://t4.ftcdn.net/jpg/11/34/35/41/360_F_1134354167_OPNhRq18IU0mgCZhRlXJ1xEiaxnZYLin.jpg",
+    price: 1500000,
+    category: "Membership",
+    features: [
+      "All Gold member benefits",
+      "Bring up to 2 guests free of charge on weekends",
+      "One complimentary private event booking per year",
+      "Same perks as Gold, but with increased flexibility and access"
+    ],
+    popular: false,
+    tags: ["Founder's Circle", "Elite Access"]
+  },
+  {
+    id: 5,
+    name: "Black Card Member",
+    description: "Legacy or ultra-VIP access with bespoke experiences",
+    image: "/images/black card.jpg",
+    price: 2000000,
+    category: "Membership",
+    features: [
+      "All Gold/Platinum benefits included",
+      "Two complimentary private events annually",
+      "Custom signature cocktail named after member",
+      "Access to global partner bars and sister clubs",
+      "Chauffeur service on special occasions",
+      "Access to private rooms or vault lounges",
+      "Yearly luxury gift (e.g., engraved decanter)",
+      "Personal VIP account manager",
+      "Private bartender for hosted events",
+      "Invitation to exclusive Legacy Circle dinner",
+      "First right of refusal on rare bottles",
+      "Black Card legacy transferable once",
+      "Quarterly premium tasting flights",
+      "VIP status during public events",
+      "Recognition on venue’s legacy wall or digital archive"
+    ],
+    popular: false,
+    tags: ["Black Card", "Ultra-Vip"]
+  }
+];

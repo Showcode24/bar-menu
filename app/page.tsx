@@ -15,6 +15,7 @@ import { ChevronUp } from "lucide-react"
 import { preloadImages } from "@/lib/utils/image-preloader"
 import SearchOverlay from "@/components/search-overlay"
 import { useSelectedDrink } from "@/lib/hooks/use-selected-drinks"
+import MembershipSection from "@/components/membership-section"
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<DrinkCategory | "all">("all")
@@ -233,7 +234,7 @@ export default function Home() {
               )}
             </div>
           </section>
-
+          <MembershipSection />
           <ReservationSection />
 
           <Footer />

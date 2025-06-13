@@ -23,6 +23,10 @@ export default function Hero() {
     document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" })
   }
 
+  const scrollToMembership = () => {
+    document.getElementById("membership")?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <div ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background video */}
@@ -74,12 +78,19 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 1, delay: 1 }}
+          className="flex gap-4"
         >
           <button
             onClick={scrollToMenu}
             className="inline-flex items-center px-6 py-3 bg-amber-500 text-black font-medium rounded-full hover:bg-amber-400 transition-colors"
           >
             View Menu
+          </button>
+          <button
+            onClick={scrollToMembership}
+            className="inline-flex items-center px-6 py-3 bg-amber-500 text-black font-medium rounded-full hover:bg-amber-400 transition-colors"
+          >
+            Exclusive Membership
           </button>
         </motion.div>
       </div>

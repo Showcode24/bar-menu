@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X, Search, Calendar } from "lucide-react"
+import { Menu, X, Search, Calendar, Crown } from "lucide-react"
 import type { DrinkCategory } from "@/lib/types"
 import { drinks } from "@/lib/data"
 
@@ -43,6 +43,11 @@ export default function MobileNav({
 
   const scrollToReservations = () => {
     document.getElementById("reservations")?.scrollIntoView({ behavior: "smooth" })
+    setIsMenuOpen(false)
+  }
+
+  const scrollToMembership = () => {
+    document.getElementById("membership")?.scrollIntoView({ behavior: "smooth" })
     setIsMenuOpen(false)
   }
 
@@ -90,6 +95,13 @@ export default function MobileNav({
                 aria-label="Reservations"
               >
                 <Calendar size={20} />
+              </button>
+              <button
+                onClick={scrollToMembership}
+                className="membership-btn p-2 text-zinc-400 hover:text-amber-500 transition-colors"
+                aria-label="Reservations"
+              >
+                <Crown size={20} />
               </button>
               <button
                 onClick={onOpenSearch} // Use the prop from parent
