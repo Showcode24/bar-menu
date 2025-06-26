@@ -11,6 +11,15 @@ interface DrinkSearchResultProps {
 }
 
 export default function DrinkSearchResult({ drink, searchTerm, onSelect }: DrinkSearchResultProps) {
+
+  const formatPrice = (price: number) => {
+    return new Intl.NumberFormat("en-NG", {
+      style: "currency",
+      currency: "NGN",
+      minimumFractionDigits: 0,
+    }).format(price)
+  }
+
   // Highlight matching text in the drink name
   const highlightMatch = (text: string, term: string) => {
     if (!term.trim()) return text
@@ -56,7 +65,7 @@ export default function DrinkSearchResult({ drink, searchTerm, onSelect }: Drink
         <div className="flex items-center mt-1">
           <span className="text-xs uppercase tracking-wider text-amber-500/80 font-medium mr-2">{drink.category}</span>
 
-          <span className="text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded-full">NGN{drink.price.toFixed(2)}</span>
+          <span className="text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded-full">{formatPrice(drink.price)}</span>
         </div>
       </div>
     </motion.div>

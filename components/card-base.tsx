@@ -23,6 +23,15 @@ type CardBaseProps = {
 }
 
 export default function CardBase({ item, index, isSelected = false }: CardBaseProps) {
+
+    const formatPrice = (price: number) => {
+    return new Intl.NumberFormat("en-NG", {
+      style: "currency",
+      currency: "NGN",
+      minimumFractionDigits: 0,
+    }).format(price)
+  }
+
   const [isDetailsOpen, setIsDetailsOpen] = useState(false)
   const [isImageLoaded, setIsImageLoaded] = useState(false)
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true })
@@ -91,7 +100,7 @@ export default function CardBase({ item, index, isSelected = false }: CardBasePr
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent"></div>
 
           <div className="absolute top-3 right-3 bg-amber-500 text-black font-bold px-3 py-1 rounded-full text-sm">
-            NGN{item.price}
+            {formatPrice(item.price)}
           </div>
 
           {item.popular && (
@@ -138,7 +147,7 @@ export default function CardBase({ item, index, isSelected = false }: CardBasePr
               <div className="flex justify-between items-start mb-4">
                 <h2 className="text-2xl font-bold text-white">{item.name}</h2>
                 <span className="bg-amber-500 text-black font-bold px-3 py-1 rounded-full text-sm">
-                  NGN{item.price.toFixed(2)}
+                  {formatPrice(item.price)}
                 </span>
               </div>
 

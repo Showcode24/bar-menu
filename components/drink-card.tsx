@@ -70,6 +70,13 @@ export default function DrinkCard({
       },
     }),
   }
+  const formatPrice = (price: number) => {
+    return new Intl.NumberFormat("en-NG", {
+      style: "currency",
+      currency: "NGN",
+      minimumFractionDigits: 0,
+    }).format(price)
+  }
 
   return (
     <>
@@ -109,7 +116,7 @@ export default function DrinkCard({
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent"></div>
 
           <div className="absolute top-3 right-3 bg-amber-500 text-black font-bold px-3 py-1 rounded-full text-sm">
-            NGN{drink.price}
+            {formatPrice(drink.price)}
           </div>
 
           {drink.popular && (
@@ -159,7 +166,7 @@ export default function DrinkCard({
               <div className="flex justify-between items-start mb-4">
                 <h2 className="text-2xl font-bold text-white">{drink.name}</h2>
                 <span className="bg-amber-500 text-black font-bold px-3 py-1 rounded-full text-sm">
-                  NGN{drink.price.toFixed(2)}
+                  {formatPrice(drink.price)}
                 </span>
               </div>
 
