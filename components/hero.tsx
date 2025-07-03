@@ -71,7 +71,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="text-xl font-light mb-8 text-zinc-300"
         >
-          Nigerian Premium Drinks Experience
+          Calm | Cozy | Water front view
         </motion.p>
 
         <motion.div
