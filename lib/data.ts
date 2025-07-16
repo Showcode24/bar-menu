@@ -448,7 +448,7 @@ export const drinks: Drink[] = [
     id: "spirit-17",
     name: "Campari",
     description: "Italian bitter aperitif with a distinctive red color and herbal flavor profile.",
-    price: 25000,
+    price: 30000,
     category: "spirits",
     image: "https://www.pngplay.com/wp-content/uploads/13/Campari-Free-PNG.png",
     tags: ["Aperitif", "Italian", "Bitter"],
@@ -906,7 +906,7 @@ export const drinks: Drink[] = [
     id: "spirit-19",
     name: "Tequilla Shot",
     description: "Premium tequila served as a shot, perfect for celebrations and parties.",
-    price: 4000,
+    price: 3000,
     category: "spirits",
     image: "/images/tequila.png",
     tags: ["Tequila", "Shot"],
@@ -915,7 +915,7 @@ export const drinks: Drink[] = [
     id: "spirit-20",
     name: "Tequilla Bottle",
     description: "Full bottle of premium tequila with smooth agave flavor and clean finish.",
-    price: 40000,
+    price: 30000,
     category: "spirits",
     image: "/images/tequila.png",
     tags: ["Tequila", "Premium"],
@@ -1010,6 +1010,16 @@ export const drinks: Drink[] = [
     image: "/images/jameson.png",
     tags: ["Whiskey", "Irish", "Small"],
   },
+{
+  id: "spirit-31",
+  name: "Bullet",
+  description: "A strong alcoholic energy drink in a compact can, popular for its bold flavor and stimulating effect.",
+  price: 3000,
+  category: "spirits",
+  image: "/images/bullet.png",
+  tags: ["Energy", "Alcohol", "Can"],
+},
+
 
   // NEW ADDITIONS - WINES
   {
