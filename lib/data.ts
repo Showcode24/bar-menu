@@ -1016,7 +1016,7 @@ export const drinks: Drink[] = [
   description: "A strong alcoholic energy drink in a compact can, popular for its bold flavor and stimulating effect.",
   price: 3000,
   category: "spirits",
-  image: "/images/bullet.png",
+  image: "https://omamall.com.ng/image/cache/catalog/Groceries/bullet-vodka-mixed-drink-550x550w.jpg",
   tags: ["Energy", "Alcohol", "Can"],
 },
 
