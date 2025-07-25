@@ -334,7 +334,7 @@ export const drinks: Drink[] = [
     id: "spirit-1",
     name: "Hennessy VSOP",
     description: "A classic cognac with notes of oak, vanilla, and cinnamon. Perfect for sipping neat or in cocktails.",
-    price: 120000,
+    price: 75000,
     category: "spirits",
     image:
       "https://barrels.ng/wp-content/uploads/2021/07/hennessy-brandy-cognac-hennessy-v-s-cognac-75cl-removebg-preview.png",
@@ -346,18 +346,51 @@ export const drinks: Drink[] = [
     name: "Jameson Irish Whiskey",
     description:
       "Triple-distilled smooth whiskey with perfect balance of spicy, nutty and vanilla notes with hints of sweet sherry.",
-    price: 45000,
+    price: 50000,
     category: "spirits",
     image: "/images/jameson.png",
     tags: ["Whiskey", "Irish"],
     popular: true,
   },
   {
+    id: "spirit-40",
+    name: "Sterov VS Brandy",
+    description:
+      "A smooth and affordable brandy with rich notes of oak, caramel, and dried fruit. Perfect for casual sipping or mixing.",
+    price: 45000,
+    category: "spirits",
+    image: "https://steroc.com/wp-content/uploads/2023/10/STEROC-BOTTLE-NEW-1024x1024.png",
+    tags: ["Brandy", "Nigerian"],
+    popular: false,
+  },
+  {
+    id: "spirit-50",
+    name: "Small Magic Moment Vodka",
+    description:
+      "A crisp and ultra-smooth vodka crafted from high-quality grains, perfect for cocktails or straight sipping.",
+    price: 8000,
+    category: "spirits",
+    image: "/images/magic-moment.png",
+    tags: ["Vodka", "Indian"],
+    popular: true,
+  },  
+  {
+    id: "spirit-20",
+    name: "Martell Cognac",
+    description:
+      "A refined cognac with elegant notes of fruit, spice, and wood, offering a smooth and sophisticated finish.",
+    price: 70000,
+    category: "spirits",
+    image: "/images/martell.png",
+    tags: ["Cognac", "French"],
+    popular: true,
+  }, 
+  {
     id: "spirit-3",
     name: "Jameson Black Barrel",
     description:
       "Triple-distilled smooth whiskey with perfect balance of spicy, nutty and vanilla notes with hints of sweet sherry.",
-    price: 45000,
+    price: 50000,
     category: "spirits",
     image: "https://barrels.ng/wp-content/uploads/2021/07/PreviewMedium-Black-Barrel-750ml-1-removebg-preview.png",
     tags: ["Whiskey", "Irish"],
@@ -367,7 +400,7 @@ export const drinks: Drink[] = [
     id: "spirit-4",
     name: "Johnnie Walker Black Label",
     description: "An iconic blended Scotch whisky with rich, complex flavors of sweet fruit and elegant smoke.",
-    price: 45000,
+    price: 52000,
     category: "spirits",
     image: "https://www.supermart.ng/cdn/shop/files/spspwh407.png?v=1688719370",
     tags: ["Whisky", "Scotch"],
@@ -492,7 +525,7 @@ export const drinks: Drink[] = [
     name: "Chamdor",
     description:
       "A premium non-alcoholic sparkling wine. Offers the taste and experience of champagne without the alcohol.",
-    price: 4500,
+    price: 8000,
     category: "wines",
     image:
       "https://static.wixstatic.com/media/bc12db_51714c3f3c304e7e82a1ff82275c02ae~mv2.png/v1/fill/w_480,h_578,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/bc12db_51714c3f3c304e7e82a1ff82275c02ae~mv2.png",
@@ -622,6 +655,17 @@ export const drinks: Drink[] = [
   },
 
   // MALTS & NON-ALCOHOLIC BOTTLES
+  {
+    id: "non-alcoholic-1",
+    name: "Climax Energy Drink",
+    description:
+      "A powerful energy drink packed with caffeine and vitamins to boost stamina, focus, and endurance. Ideal for long nights and active days.",
+    price: 2000,
+    category: "non-alcoholic",
+    image: "/images/climax.png",
+    tags: ["Energy Drink", "Non-Alcoholic"],
+    popular: true,
+  },  
   {
     id: "non-alc-1",
     name: "Malta Guinness",
@@ -927,6 +971,15 @@ export const drinks: Drink[] = [
     name: "Small Sky Vodka",
     description: "Premium vodka in a compact bottle with clean, crisp taste.",
     price: 5000,
+    category: "spirits",
+    image: "https://worldwineliquors.com/wp-content/uploads/2019/03/ddb9e080-6191-4115-9691-9ba2ad6263b4.png",
+    tags: ["Vodka", "Small"],
+  },
+  {
+    id: "spirit-21",
+    name: "Big Sky Vodka",
+    description: "Premium vodka in a compact bottle with clean, crisp taste.",
+    price: 18000,
     category: "spirits",
     image: "https://worldwineliquors.com/wp-content/uploads/2019/03/ddb9e080-6191-4115-9691-9ba2ad6263b4.png",
     tags: ["Vodka", "Small"],
