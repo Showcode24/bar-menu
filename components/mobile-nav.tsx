@@ -85,7 +85,7 @@ export default function MobileNav({
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-xl font-bold text-amber-500">
-              DOCKERS' BAR
+              DOCKERS' CLUB
             </motion.h1>
 
             <div className="flex items-center space-x-3">

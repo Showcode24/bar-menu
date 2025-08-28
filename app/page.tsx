@@ -150,8 +150,8 @@ export default function Home() {
       default:
       case "grill":
         return "Grill"
-      case "finger-foods":
-        return "Finger Foods"
+      // case "finger-foods":
+      //   return "Finger Foods"
         return category.charAt(0).toUpperCase() + category.slice(1)
     }
   }

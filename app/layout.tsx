@@ -14,20 +14,20 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "DOCKERS' BAR | Premium Nigerian Drinks Experience",
-  description: "Explore our signature drinks and cocktails at DOCKERS' BAR, a premium Nigerian bar experience.",
+  title: "DOCKERS' CLUB | Premium Nigerian Drinks Experience",
+  description: "Explore our signature drinks and cocktails at DOCKERS' CLUB, a premium Nigerian bar experience.",
   keywords: "bar, cocktails, drinks, menu, premium, luxury, Nigerian, Lagos",
   openGraph: {
-    title: "DOCKERS' BAR | Premium Nigerian Drinks Experience",
-    description: "Explore our signature drinks and cocktails at DOCKERS' BAR, a premium Nigerian bar experience.",
+    title: "DOCKERS' CLUB | Premium Nigerian Drinks Experience",
+    description: "Explore our signature drinks and cocktails at DOCKERS' CLUB, a premium Nigerian bar experience.",
     url: "https://DOCKERS'-bar.vercel.app",
-    siteName: "DOCKERS' BAR",
+    siteName: "DOCKERS' CLUB",
     images: [
       {
         url: "/images/og-image.png",
         width: 1200,
         height: 630,
-        alt: "DOCKERS' BAR",
+        alt: "DOCKERS' CLUB",
       },
     ],
     locale: "en_US",
