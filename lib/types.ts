@@ -8,6 +8,7 @@ export type DrinkCategory =
   | "traditional"
   | "soup"
   | "grill"
+  | "rice & pasta"
   | "smoke";
 
 export interface Drink {

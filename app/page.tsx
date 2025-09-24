@@ -1,30 +1,32 @@
-"use client"
+"use client";
 
-import { useEffect, useState, useRef } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import MobileNav from "@/components/mobile-nav"
-import Hero from "@/components/hero"
-import DrinkCard from "@/components/drink-card"
-import Footer from "@/components/footer"
-import LoadingScreen from "@/components/loading-screen"
-import ReservationSection from "@/components/reservation-section"
-import CustomOnboardingTour from "@/components/custom-onboarding-tour"
-import type { DrinkCategory, Drink } from "@/lib/types"
-import { drinks } from "@/lib/data"
-import { ChevronUp } from "lucide-react"
-import { preloadImages } from "@/lib/utils/image-preloader"
-import SearchOverlay from "@/components/search-overlay"
-import { useSelectedDrink } from "@/lib/hooks/use-selected-drinks"
-import MembershipSection from "@/components/membership-section"
+import { useEffect, useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import MobileNav from "@/components/mobile-nav";
+import Hero from "@/components/hero";
+import DrinkCard from "@/components/drink-card";
+import Footer from "@/components/footer";
+import LoadingScreen from "@/components/loading-screen";
+import ReservationSection from "@/components/reservation-section";
+import CustomOnboardingTour from "@/components/custom-onboarding-tour";
+import type { DrinkCategory, Drink } from "@/lib/types";
+import { drinks } from "@/lib/data";
+import { ChevronUp } from "lucide-react";
+import { preloadImages } from "@/lib/utils/image-preloader";
+import SearchOverlay from "@/components/search-overlay";
+import { useSelectedDrink } from "@/lib/hooks/use-selected-drinks";
+import MembershipSection from "@/components/membership-section";
 
 export default function Home() {
-  const [selectedCategory, setSelectedCategory] = useState<DrinkCategory | "all">("all")
-  const [filteredDrinks, setFilteredDrinks] = useState<Drink[]>(drinks)
-  const [isLoaded, setIsLoaded] = useState(false)
-  const [showScrollTop, setShowScrollTop] = useState(false)
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
-  const { selectedDrinkId, setSelectedDrinkId } = useSelectedDrink()
-  const mainRef = useRef<HTMLElement>(null)
+  const [selectedCategory, setSelectedCategory] = useState<
+    DrinkCategory | "all"
+  >("all");
+  const [filteredDrinks, setFilteredDrinks] = useState<Drink[]>(drinks);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const { selectedDrinkId, setSelectedDrinkId } = useSelectedDrink();
+  const mainRef = useRef<HTMLElement>(null);
 
   const categories: (DrinkCategory | "all")[] = [
     "all",
@@ -38,134 +40,157 @@ export default function Home() {
     "wines",
     "non-alcoholic",
     "traditional",
-  ]
+  ];
 
   // Handle scroll events
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 500) {
-        setShowScrollTop(true)
+        setShowScrollTop(true);
       } else {
-        setShowScrollTop(false)
+        setShowScrollTop(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Filter drinks based on selected category - using memoization for performance
   useEffect(() => {
     if (selectedCategory === "all") {
-      setFilteredDrinks(drinks)
+      setFilteredDrinks(drinks);
     } else {
-      setFilteredDrinks(drinks.filter((drink) => drink.category === selectedCategory))
+      setFilteredDrinks(
+        drinks.filter((drink) => drink.category === selectedCategory)
+      );
     }
-  }, [selectedCategory])
+  }, [selectedCategory]);
 
   // Preload critical images during initial load
   useEffect(() => {
     const preloadCriticalImages = async () => {
       try {
         // Preload first 6 drink images for faster initial render
-        const imagesToPreload = drinks.slice(0, 6).map((drink) => drink.image || "/placeholder.svg")
-        await preloadImages(imagesToPreload)
+        const imagesToPreload = drinks
+          .slice(0, 6)
+          .map((drink) => drink.image || "/placeholder.svg");
+        await preloadImages(imagesToPreload);
 
         // Simulate loading with a minimum time to show the animation
         setTimeout(() => {
-          setIsLoaded(true)
-        }, 2500)
+          setIsLoaded(true);
+        }, 2500);
       } catch (error) {
-        console.error("Failed to preload images:", error)
-        setIsLoaded(true) // Ensure we still show content even if preloading fails
+        console.error("Failed to preload images:", error);
+        setIsLoaded(true); // Ensure we still show content even if preloading fails
       }
-    }
+    };
 
-    preloadCriticalImages()
-  }, [])
+    preloadCriticalImages();
+  }, []);
 
   // Effect to handle when a drink is selected from search
   useEffect(() => {
     if (selectedDrinkId) {
       // Find the selected drink
-      const selectedDrink = drinks.find((drink) => drink.id === selectedDrinkId)
+      const selectedDrink = drinks.find(
+        (drink) => drink.id === selectedDrinkId
+      );
 
       if (selectedDrink) {
         // Update the category if needed
-        if (selectedDrink.category !== selectedCategory && selectedCategory !== "all") {
-          setSelectedCategory(selectedDrink.category as DrinkCategory)
+        if (
+          selectedDrink.category !== selectedCategory &&
+          selectedCategory !== "all"
+        ) {
+          setSelectedCategory(selectedDrink.category as DrinkCategory);
         }
 
         // Small delay to ensure the DOM has updated with the new category
         setTimeout(() => {
           // Try to find the specific drink element
-          const drinkElement = document.getElementById(`drink-${selectedDrinkId}`)
+          const drinkElement = document.getElementById(
+            `drink-${selectedDrinkId}`
+          );
           if (drinkElement) {
-            drinkElement.scrollIntoView({ behavior: "smooth", block: "center" })
+            drinkElement.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+            });
           } else {
             // Fallback to scrolling to the menu section
-            const menuSection = document.getElementById("menu")
+            const menuSection = document.getElementById("menu");
             if (menuSection) {
-              menuSection.scrollIntoView({ behavior: "smooth" })
+              menuSection.scrollIntoView({ behavior: "smooth" });
             }
           }
-        }, 100) // Short delay to ensure DOM updates
+        }, 100); // Short delay to ensure DOM updates
       }
     }
-  }, [selectedDrinkId, selectedCategory])
+  }, [selectedDrinkId, selectedCategory]);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-    })
-  }
+    });
+  };
 
   // Function to open search overlay
   const handleOpenSearch = () => {
-    setIsSearchOpen(true)
-  }
+    setIsSearchOpen(true);
+  };
 
   // Get category display name for the heading
   const getCategoryDisplayName = (category: DrinkCategory | "all") => {
     switch (category) {
       case "all":
-        return "All Drinks"
+        return "All Drinks";
       case "lagers":
-        return "Lagers & Stouts"
+        return "Lagers & Stouts";
       case "spirits":
-        return "Premium & Regular Spirits"
+        return "Premium & Regular Spirits";
       case "bitters":
-        return "Bitters"
+        return "Bitters";
       case "cocktails":
-        return "Cocktails & Bar Blends"
+        return "Cocktails & Bar Blends";
       case "wines":
-        return "Wines"
+        return "Wines";
       case "non-alcoholic":
-        return "Non-Alcoholic Drinks"
+        return "Non-Alcoholic Drinks";
       case "traditional":
-        return "Traditional Favorites"
+        return "Traditional Favorites";
       case "soup":
-        return "Soup"
+        return "Soup";
       default:
       case "grill":
-        return "Grill"
-        case "smoke":
-        return "Smoke"
-      // case "finger-foods":
-      //   return "Finger Foods"
-        return category.charAt(0).toUpperCase() + category.slice(1)
+        return "Grill";
+      case "smoke":
+        return "Smoke";
+      case "rice & pasta":
+        return "Rice & Pasta";
+        // case "finger-foods":
+        //   return "Finger Foods"
+        return category.charAt(0).toUpperCase() + category.slice(1);
     }
-  }
+  };
 
   return (
-    <main ref={mainRef} className="min-h-screen bg-black text-white overflow-hidden">
+    <main
+      ref={mainRef}
+      className="min-h-screen bg-black text-white overflow-hidden"
+    >
       {/* Onboarding Tour */}
       {isLoaded && <CustomOnboardingTour />}
 
       <AnimatePresence>
         {!isLoaded && (
-          <motion.div initial={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
+          <motion.div
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <LoadingScreen />
           </motion.div>
         )}
@@ -201,10 +226,11 @@ export default function Home() {
                     <button
                       key={category}
                       onClick={() => setSelectedCategory(category)}
-                      className={`px-6 py-2 rounded-full transition-all duration-300 ${selectedCategory === category
-                        ? "bg-amber-500 text-black font-medium"
-                        : "bg-zinc-900 text-zinc-400 hover:bg-zinc-800"
-                        }`}
+                      className={`px-6 py-2 rounded-full transition-all duration-300 ${
+                        selectedCategory === category
+                          ? "bg-amber-500 text-black font-medium"
+                          : "bg-zinc-900 text-zinc-400 hover:bg-zinc-800"
+                      }`}
                     >
                       {getCategoryDisplayName(category)}
                     </button>
@@ -222,15 +248,26 @@ export default function Home() {
                   className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
                 >
                   {filteredDrinks.map((drink, index) => (
-                    <div key={drink.id} className={index === 0 ? "drink-card" : ""}>
-                      <DrinkCard drink={drink} index={index} isSelected={drink.id === selectedDrinkId} />
+                    <div
+                      key={drink.id}
+                      className={index === 0 ? "drink-card" : ""}
+                    >
+                      <DrinkCard
+                        drink={drink}
+                        index={index}
+                        isSelected={drink.id === selectedDrinkId}
+                      />
                     </div>
                   ))}
                 </motion.div>
               </AnimatePresence>
 
               {filteredDrinks.length === 0 && (
-                <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center text-zinc-400 py-12">
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="text-center text-zinc-400 py-12"
+                >
                   No drinks found in this category.
                 </motion.p>
               )}
@@ -266,5 +303,5 @@ export default function Home() {
         </>
       )}
     </main>
-  )
+  );
 }

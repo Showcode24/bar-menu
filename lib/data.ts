@@ -1070,7 +1070,7 @@ export const drinks: Drink[] = [
     name: "Pepper Goat Meat",
     description:
       "Tender pieces of goat meat simmered in hot pepper sauce. A bold and spicy Nigerian delicacy.",
-    price: 10000,
+    price: 7000,
     category: "grill",
     image: "/images/goat-meat.jpg",
     tags: ["Spicy", "Goat Meat", "Delicacy"],
@@ -1081,18 +1081,31 @@ export const drinks: Drink[] = [
     name: "Grilled Chicken",
     description:
       "Juicy chicken pieces sautéed in rich pepper sauce for that spicy kick.",
-    price: 9000,
+    price: 10000 - 12000,
     category: "grill",
     image: "/images/grilled-chicken.webp",
     tags: ["Chicken", "Spicy", "Nigerian"],
     ingredients: ["Chicken", "Pepper", "Seasoning", "Oil", "Onions"],
   },
   {
+    id: "meal-3",
+    name: "Chicken Wings & Chips",
+    description:
+      "Crispy golden chicken wings served with freshly fried chips – a perfect combo of crunch and flavor.",
+    price: 5000,
+    category: "grill",
+    image:
+      "https://media.istockphoto.com/id/1336435582/photo/roasted-chicken-wings-with-spices-in-plate.jpg?s=612x612&w=0&k=20&c=WbJgFVo9CtWpIefdrhpEdoVKpLqZqWpFkNwtCXGFGa0=",
+    tags: ["Chicken", "Wings", "Chips", "Snack"],
+    ingredients: ["Chicken Wings", "Potatoes", "Spices", "Oil", "Seasoning"],
+  },
+
+  {
     id: "meal-4",
-    name: "Pepper Beef",
+    name: "Peppered Beef & Fries",
     description:
       "Flavorful beef chunks cooked in spicy pepper sauce. A favorite among spice lovers.",
-    price: 8000,
+    price: 5000,
     category: "grill",
     image: "/images/peppered-meat.jpeg",
     tags: ["Beef", "Spicy", "Classic"],
@@ -1114,7 +1127,7 @@ export const drinks: Drink[] = [
     name: "Asun",
     description:
       "Grilled spicy goat meat chunks, smoky and full of bold Nigerian flavor.",
-    price: 4000,
+    price: 3000,
     category: "grill",
     image:
       "https://img-global.cpcdn.com/recipes/9530d8a18ea64f77/1200x630cq90/photo.jpg",
@@ -1125,7 +1138,7 @@ export const drinks: Drink[] = [
     id: "meal-11",
     name: "Fried Turkey",
     description: "Juicy turkey pieces fried to perfection with a spicy kick.",
-    price: 4500,
+    price: 8000,
     category: "grill",
     image:
       "https://www.thecookierookie.com/wp-content/uploads/2023/11/fried-turkey-recipe-3-edited.jpg",
@@ -1159,9 +1172,9 @@ export const drinks: Drink[] = [
   // MEALS - SOUPS
   {
     id: "meal-6",
-    name: "Catfish Pepper Soup",
+    name: "Full Catfish Pepper Soup",
     description: "Fresh catfish cooked in a peppery aromatic broth.",
-    price: 5500,
+    price: 20000,
     category: "soup",
     image: "/images/catfish.jpg",
     tags: ["Soup", "Seafood", "Spicy"],
@@ -1172,7 +1185,7 @@ export const drinks: Drink[] = [
     id: "meal-7",
     name: "Goat Meat Pepper Soup",
     description: "Tender goat meat in hot, spiced broth with local herbs.",
-    price: 7000,
+    price: 6000,
     category: "soup",
     image: "/images/goat-meat.jpg",
     tags: ["Soup", "Spicy", "Traditional"],
@@ -1182,7 +1195,7 @@ export const drinks: Drink[] = [
     id: "meal-8",
     name: "Chicken Pepper Soup",
     description: "Soft chicken cuts simmered in spicy pepper soup broth.",
-    price: 5500,
+    price: 5000,
     category: "soup",
     image:
       "https://quickneedsstore.com/storage/customers/eyoc0cswaaam0lf-1.jpg",
@@ -1630,6 +1643,157 @@ export const drinks: Drink[] = [
     image:
       "data:image/jpeg;base64,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",
     tags: ["Cigarette", "Tobacco", "Strong"],
+  },
+  {
+    id: "meal-8",
+    name: "Cow Leg (Nkwobi style)",
+    description:
+      "Delicacy made with tender cow leg parts in spicy palm oil sauce.",
+    price: 7000,
+    category: "traditional",
+    image: "https://assets.unileversolutions.com/recipes-v2/159354.jpg",
+    tags: ["Nkwobi", "Spicy"],
+    ingredients: ["Cow leg", "Palm oil", "Utazi", "Seasoning"],
+  },
+  {
+    id: "meal-9",
+    name: "Isi Ewu",
+    description:
+      "Goat head prepared in traditional Nkwobi style with rich spices.",
+    price: 15000,
+    category: "traditional",
+    image: "https://www.edofood.com.ng/wp-content/uploads/2024/04/OIP-7.jpg",
+    tags: ["Delicacy", "Spicy", "Traditional"],
+    ingredients: ["Goat head", "Palm oil", "Spices", "Onion"],
+  },
+  {
+    id: "meal-10",
+    name: "Fried Snail & Chips",
+    description: "Delicately fried snail tossed in spicy pepper sauce.",
+    price: 7000 - 15000,
+    category: "traditional",
+    image: "/images/snail3.webp",
+    tags: ["Exotic", "Spicy"],
+    ingredients: ["Snail", "Pepper", "Onion", "Oil"],
+  },
+  {
+    id: "meal-basmati-rice",
+    name: "Basmati Rice",
+    description:
+      "Fluffy, aromatic basmati rice cooked to perfection – a light and tasty complement to any dish.",
+    price: 2000,
+    category: "rice & pasta",
+    image:
+      "https://images.unsplash.com/photo-1516684732162-798a0062be99?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmljZXxlbnwwfHwwfHx8MA%3D%3D",
+    tags: ["Rice", "Basmati", "Side", "Meals"],
+    ingredients: ["Basmati Rice", "Salt", "Oil", "Water"],
+  },
+  {
+    id: "meal-noodles-egg",
+    name: "Noodles & Egg",
+    description:
+      "Deliciously seasoned instant noodles served with a boiled or fried egg for a quick, satisfying meal.",
+    price: 2500,
+    category: "rice & pasta",
+    image:
+      "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bm9vZGxlc3xlbnwwfHwwfHx8MA%3D%3D",
+    tags: ["Noodles", "Egg", "Quick Meal", "Comfort Food"],
+    ingredients: ["Noodles", "Egg", "Seasoning", "Oil", "Vegetables"],
+  },
+  {
+    id: "meal-jollof-rice",
+    name: "Jollof Rice",
+    description:
+      "Classic Nigerian jollof rice, rich in smoky tomato flavor and perfectly spiced – a party favorite on any plate.",
+    price: 2000,
+    category: "rice & pasta",
+    image:
+      "https://plus.unsplash.com/premium_photo-1694141252774-c937d97641da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8am9sbG9mJTIwcmljZXxlbnwwfHwwfHx8MA%3D%3D",
+    tags: ["Rice", "Jollof", "Nigerian", "Spicy"],
+    ingredients: ["Rice", "Tomatoes", "Pepper", "Seasoning", "Oil", "Onions"],
+  },
+  {
+    id: "meal-fried-rice",
+    name: "Fried Rice",
+    description:
+      "Golden stir-fried rice with vegetables and seasoning – a delicious balance of taste and texture.",
+    price: 2000,
+    category: "rice & pasta",
+    image:
+      "https://images.pexels.com/photos/17910326/pexels-photo-17910326.jpeg?cs=srgb&dl=pexels-nadja-17910326.jpg&fm=jpg",
+    tags: ["Rice", "Fried", "Vegetables", "Nigerian"],
+    ingredients: ["Rice", "Carrots", "Peas", "Green Beans", "Seasoning", "Oil"],
+  },
+  {
+    id: "meal-platter-special",
+    name: "Platter Special Medium",
+    description:
+      "A generous mix of favorites on one plate – Barbeque Croaker Fish, Peppered Goat Meat, Peppered Chicken, Chicken Wings, Fried Snails, Shrimps, golden fries (potatoes, yam & plantain), and fresh salad. Perfect for sharing or indulging solo.",
+    price: 70000,
+    category: "grill",
+    image:
+      "https://thumbs.dreamstime.com/b/mixed-grilled-meats-vegetables-wooden-platter-barbecue-concept-322956697.jpg",
+    tags: [
+      "Platter",
+      "Croaker Fish",
+      "Goat Meat",
+      "Chicken",
+      "Wings",
+      "Snails",
+      "Shrimps",
+      "Fries",
+      "Salad",
+    ],
+    ingredients: [
+      "Croaker Fish",
+      "Goat Meat",
+      "Chicken",
+      "Chicken Wings",
+      "Snails",
+      "Shrimps",
+      "Potatoes",
+      "Yam",
+      "Plantain",
+      "Salad",
+      "Spices",
+      "Seasoning",
+      "Oil",
+    ],
+  },
+  {
+    id: "meal-platter-special",
+    name: "Platter Special Large",
+    description:
+      "A generous mix of favorites on one plate – Barbeque Croaker Fish, Peppered Goat Meat, Peppered Chicken, Chicken Wings, Fried Snails, Shrimps, golden fries (potatoes, yam & plantain), and fresh salad. Perfect for sharing or indulging solo.",
+    price: 120000,
+    category: "grill",
+    image: "/images/platter.png",
+    tags: [
+      "Platter",
+      "Croaker Fish",
+      "Goat Meat",
+      "Chicken",
+      "Wings",
+      "Snails",
+      "Shrimps",
+      "Fries",
+      "Salad",
+    ],
+    ingredients: [
+      "Croaker Fish",
+      "Goat Meat",
+      "Chicken",
+      "Chicken Wings",
+      "Snails",
+      "Shrimps",
+      "Potatoes",
+      "Yam",
+      "Plantain",
+      "Salad",
+      "Spices",
+      "Seasoning",
+      "Oil",
+    ],
   },
 ];
 

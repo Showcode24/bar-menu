@@ -10,14 +10,14 @@ interface MobileNavProps {
   categories: (DrinkCategory | "all")[]
   selectedCategory: DrinkCategory | "all"
   setSelectedCategory: (category: DrinkCategory | "all") => void
-  onOpenSearch: () => void // Add this prop to control search from parent
+  onOpenSearch: () => void 
 }
 
 export default function MobileNav({
   categories,
   selectedCategory,
   setSelectedCategory,
-  onOpenSearch, // Add this prop
+  onOpenSearch, 
 }: MobileNavProps) {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -55,23 +55,32 @@ export default function MobileNav({
   const getCategoryDisplayName = (category: DrinkCategory | "all") => {
     switch (category) {
       case "all":
-        return "All Drinks"
+        return "All Drinks";
       case "lagers":
-        return "Lagers & Stouts"
+        return "Lagers & Stouts";
       case "spirits":
-        return "Spirits"
+        return "Premium & Regular Spirits";
       case "bitters":
-        return "Bitters"
+        return "Bitters";
       case "cocktails":
-        return "Cocktails"
+        return "Cocktails & Bar Blends";
       case "wines":
-        return "Wines"
+        return "Wines";
       case "non-alcoholic":
-        return "Non-Alcoholic"
+        return "Non-Alcoholic Drinks";
       case "traditional":
-        return "Traditional"
+        return "Traditional Favorites";
+      case "soup":
+        return "Soup";
       default:
-        return category.charAt(0).toUpperCase() + category.slice(1)
+      case "grill":
+        return "Grill";
+      case "smoke":
+        return "Smoke";
+      case "rice & pasta":
+        return "Rice & Pasta";
+      // default:
+      //   return category.charAt(0).toUpperCase() + category.slice(1)
     }
   }
 
