@@ -1081,7 +1081,7 @@ export const drinks: Drink[] = [
     name: "Grilled Chicken",
     description:
       "Juicy chicken pieces sautéed in rich pepper sauce for that spicy kick.",
-    price: 10000 - 12000,
+    price: 10000,
     category: "grill",
     image: "/images/grilled-chicken.webp",
     tags: ["Chicken", "Spicy", "Nigerian"],
@@ -1682,7 +1682,7 @@ export const drinks: Drink[] = [
     description:
       "Fluffy, aromatic basmati rice cooked to perfection – a light and tasty complement to any dish.",
     price: 2000,
-    category: "rice & pasta",
+    category: "rice",
     image:
       "https://images.unsplash.com/photo-1516684732162-798a0062be99?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmljZXxlbnwwfHwwfHx8MA%3D%3D",
     tags: ["Rice", "Basmati", "Side", "Meals"],
@@ -1694,7 +1694,7 @@ export const drinks: Drink[] = [
     description:
       "Deliciously seasoned instant noodles served with a boiled or fried egg for a quick, satisfying meal.",
     price: 2500,
-    category: "rice & pasta",
+    category: "rice",
     image:
       "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bm9vZGxlc3xlbnwwfHwwfHx8MA%3D%3D",
     tags: ["Noodles", "Egg", "Quick Meal", "Comfort Food"],
@@ -1706,7 +1706,7 @@ export const drinks: Drink[] = [
     description:
       "Classic Nigerian jollof rice, rich in smoky tomato flavor and perfectly spiced – a party favorite on any plate.",
     price: 2000,
-    category: "rice & pasta",
+    category: "rice",
     image:
       "https://plus.unsplash.com/premium_photo-1694141252774-c937d97641da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8am9sbG9mJTIwcmljZXxlbnwwfHwwfHx8MA%3D%3D",
     tags: ["Rice", "Jollof", "Nigerian", "Spicy"],
@@ -1718,7 +1718,7 @@ export const drinks: Drink[] = [
     description:
       "Golden stir-fried rice with vegetables and seasoning – a delicious balance of taste and texture.",
     price: 2000,
-    category: "rice & pasta",
+    category: "rice",
     image:
       "https://images.pexels.com/photos/17910326/pexels-photo-17910326.jpeg?cs=srgb&dl=pexels-nadja-17910326.jpg&fm=jpg",
     tags: ["Rice", "Fried", "Vegetables", "Nigerian"],

@@ -36,10 +36,11 @@ export default function Home() {
     "soup",
     "grill",
     "smoke",
-    // "cocktails",
+    "cocktails",
     "wines",
     "non-alcoholic",
     "traditional",
+    "rice",
   ];
 
   // Handle scroll events
@@ -151,8 +152,8 @@ export default function Home() {
         return "Lagers & Stouts";
       case "spirits":
         return "Premium & Regular Spirits";
-      case "bitters":
-        return "Bitters";
+      case "rice":
+        return "Rice & Pasta";
       case "cocktails":
         return "Cocktails & Bar Blends";
       case "wines":
@@ -168,8 +169,8 @@ export default function Home() {
         return "Grill";
       case "smoke":
         return "Smoke";
-      case "rice & pasta":
-        return "Rice & Pasta";
+      case "bitters":
+        return "Bitters";
         // case "finger-foods":
         //   return "Finger Foods"
         return category.charAt(0).toUpperCase() + category.slice(1);

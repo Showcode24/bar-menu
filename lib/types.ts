@@ -1,14 +1,14 @@
 export type DrinkCategory =
   | "lagers"
   | "spirits"
-  | "bitters"
+  | "rice"
   | "cocktails"
   | "wines"
   | "non-alcoholic"
   | "traditional"
   | "soup"
   | "grill"
-  | "rice & pasta"
+  | "bitters"
   | "smoke";
 
 export interface Drink {
