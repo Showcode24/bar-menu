@@ -33,7 +33,7 @@ export default function Home() {
     "bitters",
     "soup",
     "grill",
-    "finger-foods",
+    "smoke",
     // "cocktails",
     "wines",
     "non-alcoholic",
@@ -150,6 +150,8 @@ export default function Home() {
       default:
       case "grill":
         return "Grill"
+        case "smoke":
+        return "Smoke"
       // case "finger-foods":
       //   return "Finger Foods"
         return category.charAt(0).toUpperCase() + category.slice(1)
