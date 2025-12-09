@@ -9,7 +9,7 @@ export const drinks: Drink[] = [
     name: "Star Lager",
     description:
       "Nigeria's first indigenous beer and one of the country's most iconic lagers. Crisp, refreshing, and perfect for any occasion.",
-    price: 3000,
+    price: 1500,
     category: "lagers",
     image: "/images/star.png",
     tags: ["Lager", "Nigerian"],
@@ -21,7 +21,7 @@ export const drinks: Drink[] = [
     name: "Gulder",
     description:
       "Known as the 'Ultimate beer', Gulder offers a rich, full-bodied taste with a distinctive golden color and refreshing finish.",
-    price: 2500,
+    price: 1500,
     category: "lagers",
     image: "/images/gulder.png",
     tags: ["Lager", "Premium"],
@@ -31,7 +31,7 @@ export const drinks: Drink[] = [
     name: "Heineken",
     description:
       "A premium international lager with a distinctive green bottle. Balanced taste with fruity notes and a mild bitter finish.",
-    price: 3000,
+    price: 2000,
     category: "lagers",
     image: "/images/heineken.png",
     tags: ["Lager", "International"],
@@ -42,7 +42,7 @@ export const drinks: Drink[] = [
     name: "J&W",
     description:
       "A smooth non-alcoholic sparkling red wine alternative with fruity and floral notes. Ideal for celebrations without the alcohol.",
-    price: 12000,
+    price: 9999,
     category: "wines",
     image: "/images/j_w.png",
     tags: ["Non-Alcoholic", "Sparkling"],
@@ -64,7 +64,7 @@ export const drinks: Drink[] = [
     name: "Bottega Gold",
     description:
       "An elegant Italian Prosecco with notes of apple, pear, acacia flowers and a golden bottle design.",
-    price: 90000,
+    price: 84999,
     category: "wines",
     image: "/images/bottega-gold.png",
     tags: ["Prosecco", "Luxury"],
@@ -84,7 +84,7 @@ export const drinks: Drink[] = [
     name: "Bardar 7 Yrs",
     description:
       "A refined Moldovan brandy, aged 7 years in oak barrels. It offers a deep amber color with elegant aromas of dried fruit, vanilla, and subtle spice, delivering a smooth and lingering finish.",
-    price: 21000,
+    price: 19999,
     category: "spirits",
     image: "/images/bardar-7yrs.png",
     tags: ["Brandy", "Moldova", "7 Years Aged"],
@@ -92,10 +92,10 @@ export const drinks: Drink[] = [
 
   {
     id: "brandy-3",
-    name: "Bardar 3 Yrs",
+    name: "Bardar 5 Yrs",
     description:
-      "A youthful Moldovan brandy aged for 3 years, presenting bright golden hues with notes of fresh fruit, oak, and a light vanilla sweetness. Smooth and approachable, perfect for casual sipping or cocktails.",
-    price: 16000,
+      "A youthful Moldovan brandy aged for 5 years, presenting bright golden hues with notes of fresh fruit, oak, and a light vanilla sweetness. Smooth and approachable, perfect for casual sipping or cocktails.",
+    price: 16999,
     category: "spirits",
     image: "/images/bardar-3yrs.png",
     tags: ["Brandy", "Moldova", "3 Years Aged"],
@@ -115,7 +115,7 @@ export const drinks: Drink[] = [
     name: "Label 5",
     description:
       "A popular blended Scotch whisky with sweet vanilla notes, slight smokiness, and smooth finish.",
-    price: 70000,
+    price: 39999,
     category: "spirits",
     image: "/images/labe5.png",
     tags: ["Whisky", "Scotch"],
@@ -125,7 +125,7 @@ export const drinks: Drink[] = [
     name: "Budweiser",
     description:
       "A classic American lager with a smooth taste, medium-bodied mouthfeel, and crisp finish.",
-    price: 3000,
+    price: 1500,
     category: "lagers",
     image: "/images/budweiser.png",
     tags: ["Lager", "International"],
@@ -136,7 +136,7 @@ export const drinks: Drink[] = [
     name: "Flying Fish",
     description:
       "A flavored alcoholic beverage combining beer with fruit flavors. Light, refreshing and slightly sweet.",
-    price: 2500,
+    price: 1500,
     category: "lagers",
     image:
       "https://kovmarket.com.ng/wp-content/uploads/2024/11/Flying-fish-Zesty-Lemon-RB-420ml-3kov-1.webp",
@@ -157,7 +157,7 @@ export const drinks: Drink[] = [
     name: "Big Stout",
     description:
       "A bold and strong stout with rich roasted malt character and intense flavor profile.",
-    price: 3000,
+    price: 2500,
     category: "lagers",
     image: "/images/guinness.png",
     tags: ["Stout", "Bold"],
@@ -167,7 +167,7 @@ export const drinks: Drink[] = [
     name: "Small Stout",
     description:
       "A smaller version of the classic stout, offering the same roasted bitterness in a compact bottle.",
-    price: 2000,
+    price: 1500,
     category: "lagers",
     image: "/images/guinness.png",
     tags: ["Stout", "Mini"],
@@ -177,7 +177,7 @@ export const drinks: Drink[] = [
     name: "Star Radler",
     description:
       "A refreshing blend of beer and citrus juice, perfect for a smooth and fruity drinking experience.",
-    price: 2500,
+    price: 1200,
     category: "lagers",
     image: "/images/starradler.png",
     tags: ["Radler", "Fruity"],
@@ -197,7 +197,7 @@ export const drinks: Drink[] = [
     name: "Trophy Lager",
     description:
       "A premium quality lager that honors the Nigerian spirit of achievement. Crisp and refreshing with a smooth finish.",
-    price: 2500,
+    price: 1500,
     category: "lagers",
     image:
       "https://addide.com/cdn/shop/products/10018_trophypremiumlargerbeer600ml_1024x1024_fab1407d-c69c-4148-aeaf-caf4edea2131.png?v=1625500991",
@@ -208,7 +208,7 @@ export const drinks: Drink[] = [
     name: "Smirnoff Ice",
     description:
       "Premium malt beverage with a blend of Smirnoff Vodka and lemon flavor. Refreshing and easy to drink.",
-    price: 2500,
+    price: 1500,
     category: "lagers",
     image: "https://centaurusint.net/images/products/VDK0005.png",
     tags: ["Flavored", "Ready-to-drink"],
@@ -258,7 +258,7 @@ export const drinks: Drink[] = [
     name: "Silk & Spice",
     description:
       "A Portuguese red wine with rich berry notes, hints of vanilla and warm spices, and a smooth, well-rounded finish. Perfect with grilled meats, cheeses, or enjoyed on its own.",
-    price: 30000,
+    price: 25000,
     category: "wines",
     image:
       "https://www.datocms-assets.com/33016/1699982312-28-silk-spice-spice-road.png",
@@ -278,7 +278,7 @@ export const drinks: Drink[] = [
     id: "lager-15",
     name: "Ace Root",
     description: "A unique root-flavored alcoholic beverage with herbal notes.",
-    price: 2500,
+    price: 1500,
     category: "lagers",
     image: "/images/ace-roots.png",
     tags: ["Flavored", "Herbal"],
@@ -287,7 +287,7 @@ export const drinks: Drink[] = [
     id: "lager-16",
     name: "Origin Bitters",
     description: "Premium Nigerian lager with a crisp and refreshing taste.",
-    price: 3000,
+    price: 1500,
     category: "bitters",
     image:
       "https://bluepicturesng.com/wp-content/uploads/2023/12/Origin-Bitters.png",
@@ -298,7 +298,7 @@ export const drinks: Drink[] = [
     name: "33 Export",
     description:
       "Classic Nigerian export lager with a smooth, balanced flavor.",
-    price: 2500,
+    price: 1500,
     category: "lagers",
     image: "/images/33-bottle.png",
     tags: ["Lager", "Nigerian", "Export"],
@@ -308,7 +308,7 @@ export const drinks: Drink[] = [
     name: "Medium Stout",
     description:
       "Rich and creamy stout with roasted malt flavors in a medium-sized bottle.",
-    price: 2500,
+    price: 1500,
     category: "lagers",
     image: "/images/guinness.png",
     tags: ["Stout", "Medium"],
@@ -317,7 +317,7 @@ export const drinks: Drink[] = [
     id: "lager-19",
     name: "Legend",
     description: "Premium Nigerian lager with a legendary taste and quality.",
-    price: 3000,
+    price: 2000,
     category: "lagers",
     image: "/images/legend.png",
     tags: ["Lager", "Nigerian", "Premium"],
@@ -326,7 +326,7 @@ export const drinks: Drink[] = [
     id: "lager-20",
     name: "Legend Twist",
     description: "A flavored variant of Legend beer with a unique twist.",
-    price: 2000,
+    price: 1500,
     category: "lagers",
     image: "/images/legend-twist.png",
     tags: ["Lager", "Flavored", "Twist"],
@@ -354,7 +354,7 @@ export const drinks: Drink[] = [
     id: "lager-23",
     name: "Tiger",
     description: "Bold lager with a fierce taste and smooth finish.",
-    price: 2500,
+    price: 1500,
     category: "lagers",
     image: "/images/tiger.png",
     tags: ["Lager", "Bold"],
@@ -364,7 +364,7 @@ export const drinks: Drink[] = [
     name: "Medium Heineken",
     description:
       "Premium international lager in medium-sized bottle with balanced taste.",
-    price: 2500,
+    price: 1500,
     category: "lagers",
     image: "/images/heineken.png",
     tags: ["Lager", "International", "Medium"],
@@ -388,7 +388,7 @@ export const drinks: Drink[] = [
     name: "Jameson Irish Whiskey",
     description:
       "Triple-distilled smooth whiskey with perfect balance of spicy, nutty and vanilla notes with hints of sweet sherry.",
-    price: 45000,
+    price: 34999,
     category: "spirits",
     image: "/images/jameson.png",
     tags: ["Whiskey", "Irish"],
@@ -399,7 +399,7 @@ export const drinks: Drink[] = [
     name: "Sterov VS Brandy",
     description:
       "A smooth and affordable brandy with rich notes of oak, caramel, and dried fruit. Perfect for casual sipping or mixing.",
-    price: 45000,
+    price: 43999,
     category: "spirits",
     image:
       "https://steroc.com/wp-content/uploads/2023/10/STEROC-BOTTLE-NEW-1024x1024.png",
@@ -421,7 +421,7 @@ export const drinks: Drink[] = [
     name: "Mirado Red Wine",
     description:
       "A smooth and easy-drinking red wine with notes of ripe berries and a hint of sweetness. Perfect for casual gatherings, celebrations, or pairing with spicy dishes.",
-    price: 25000,
+    price: 22999,
     category: "wines",
     image: "/images/mirado-red.png",
     tags: ["Wine", "Red", "Sweet", "Nigeria"],
@@ -514,7 +514,17 @@ export const drinks: Drink[] = [
     name: "William Lawson's Blended Scotch",
     description:
       "A bold and smooth blended Scotch whisky with notes of toasted barley, citrus, and a hint of spice. Approachable and versatile, it’s perfect neat, on the rocks, or mixed in cocktails.",
-    price: 9000,
+    price: 20000,
+    category: "spirits",
+    image: "/images/william-lawsons.png",
+    tags: ["Whisky", "Scotch", "Blended", "Classic"],
+  },
+  {
+    id: "whisky-william-lawsons",
+    name: "Small William Lawson's Blended Scotch",
+    description:
+      "A bold and smooth blended Scotch whisky with notes of toasted barley, citrus, and a hint of spice. Approachable and versatile, it’s perfect neat, on the rocks, or mixed in cocktails.",
+    price: 7999,
     category: "spirits",
     image: "/images/william-lawsons.png",
     tags: ["Whisky", "Scotch", "Blended", "Classic"],
@@ -546,7 +556,7 @@ export const drinks: Drink[] = [
     name: "Jameson Black Barrel",
     description:
       "Triple-distilled smooth whiskey with perfect balance of spicy, nutty and vanilla notes with hints of sweet sherry.",
-    price: 75000,
+    price: 65999,
     category: "spirits",
     image:
       "https://barrels.ng/wp-content/uploads/2021/07/PreviewMedium-Black-Barrel-750ml-1-removebg-preview.png",
@@ -558,7 +568,7 @@ export const drinks: Drink[] = [
     name: "Johnnie Walker Black Label",
     description:
       "An iconic blended Scotch whisky with rich, complex flavors of sweet fruit and elegant smoke.",
-    price: 75000,
+    price: 64999,
     category: "spirits",
     image: "https://www.supermart.ng/cdn/shop/files/spspwh407.png?v=1688719370",
     tags: ["Whisky", "Scotch"],
@@ -568,7 +578,7 @@ export const drinks: Drink[] = [
     name: "Johnnie Walker Blonde",
     description:
       "An iconic blended Scotch whisky with rich, complex flavors of sweet fruit and elegant smoke.",
-    price: 45000,
+    price: 32999,
     category: "spirits",
     image: "https://www.supermart.ng/cdn/shop/files/spspwh407.png?v=1688719370",
     tags: ["Whisky", "Scotch"],
@@ -607,6 +617,16 @@ export const drinks: Drink[] = [
     tags: ["Whiskey", "Tennessee"],
   },
   {
+    id: "spirit-10",
+    name: "Small Jack Daniel's",
+    description:
+      "Tennessee whiskey with a smooth, mellow flavor and charcoal mellowing.",
+    price: 18000,
+    category: "spirits",
+    image: "/images/jack-daniels.png",
+    tags: ["Whiskey", "Tennessee"],
+  },
+  {
     id: "spirit-11",
     name: "Blue Label",
     description:
@@ -621,7 +641,7 @@ export const drinks: Drink[] = [
     id: "spirit-12",
     name: "Red Label",
     description: "Bold and vibrant Scotch whisky with a fiery kick.",
-    price: 50000,
+    price: 34999,
     category: "spirits",
     image: "/images/red-label.png",
     tags: ["Whisky", "Scotch"],
@@ -640,7 +660,7 @@ export const drinks: Drink[] = [
     id: "spirit-13",
     name: "Glenfiddich 12yrs",
     description: "Aged single malt Scotch whisky with pear and oak notes.",
-    price: 113000,
+    price: 94999,
     category: "spirits",
     image: "/images/glefiddich.png",
     tags: ["Whisky", "Single Malt"],
@@ -649,7 +669,7 @@ export const drinks: Drink[] = [
     id: "spirit-13",
     name: "Glenfiddich 15yrs",
     description: "Aged single malt Scotch whisky with pear and oak notes.",
-    price: 170000,
+    price: 124999,
     category: "spirits",
     image: "/images/glefiddich.png",
     tags: ["Whisky", "Single Malt"],
@@ -658,7 +678,7 @@ export const drinks: Drink[] = [
     id: "spirit-13",
     name: "Glenfiddich 18yrs",
     description: "Aged single malt Scotch whisky with pear and oak notes.",
-    price: 230000,
+    price: 194999,
     category: "spirits",
     image: "/images/glefiddich.png",
     tags: ["Whisky", "Single Malt"],
@@ -695,7 +715,7 @@ export const drinks: Drink[] = [
     name: "Tenjaku",
     description:
       "A smooth and well-balanced Japanese whisky with subtle smoky notes and hints of pear, vanilla, and malt. Perfect for sipping or cocktails.",
-    price: 60000,
+    price: 40000,
     category: "spirits",
     image:
       "https://cheers.com.np/uploads/products/995494496485864758607514492044902537728351.png",
@@ -706,7 +726,17 @@ export const drinks: Drink[] = [
     name: "Campari",
     description:
       "Italian bitter aperitif with a distinctive red color and herbal flavor profile.",
-    price: 40000,
+    price: 29999,
+    category: "spirits",
+    image: "https://www.pngplay.com/wp-content/uploads/13/Campari-Free-PNG.png",
+    tags: ["Aperitif", "Italian", "Bitter"],
+  },
+  {
+    id: "spirit-17",
+    name: "Small Campari",
+    description:
+      "Italian bitter aperitif with a distinctive red color and herbal flavor profile.",
+    price: 10000,
     category: "spirits",
     image: "https://www.pngplay.com/wp-content/uploads/13/Campari-Free-PNG.png",
     tags: ["Aperitif", "Italian", "Bitter"],
@@ -728,7 +758,7 @@ export const drinks: Drink[] = [
     name: "Carlo Rossi Red",
     description:
       "A smooth, easy-drinking red wine with flavors of dark fruit and a soft finish. Perfect for casual gatherings.",
-    price: 20000,
+    price: 14999,
     category: "wines",
     image: "/images/carlo.png",
     tags: ["Red", "Sweet"],
@@ -739,7 +769,7 @@ export const drinks: Drink[] = [
     name: "Four Cousins",
     description:
       "A semi-sweet natural red wine with a smooth, fruity taste. Popular for its approachable flavor profile.",
-    price: 20000,
+    price: 14999,
     category: "wines",
     image: "/images/four-cousins.png",
     tags: ["Red", "Semi-sweet"],
@@ -771,7 +801,7 @@ export const drinks: Drink[] = [
     name: "Royal Cycle (Small)",
     description:
       "A compact bottle of Royal Cycle whisky, featuring a rich and smooth taste with hints of oak and warm spices.",
-    price: 6000,
+    price: 4999,
     category: "spirits",
     image:
       "https://brewscanner.ae/wp-content/uploads/2024/12/ROYAL-CIRCLE-PREMIUM-WHISKY.png",
@@ -791,6 +821,15 @@ export const drinks: Drink[] = [
     name: "Velita",
     description: "Light and crisp, with floral aromas and a smooth palate.",
     price: 6000,
+    category: "wines",
+    image: "/images/veleta.png",
+    tags: ["Wine"],
+  },
+  {
+    id: "wine-14",
+    name: "Small Velita",
+    description: "Light and crisp, with floral aromas and a smooth palate.",
+    price: 3999,
     category: "wines",
     image: "/images/veleta.png",
     tags: ["Wine"],
@@ -835,9 +874,9 @@ export const drinks: Drink[] = [
   },
   {
     id: "wine-19",
-    name: "Dominio",
+    name: "Dominion",
     description: "Spanish red wine with rich berry flavors and smooth finish.",
-    price: 20000,
+    price: 14999,
     category: "wines",
     image: "/images/dominio.png",
     tags: ["Red Wine", "Spanish"],
@@ -847,7 +886,7 @@ export const drinks: Drink[] = [
     name: "Cape Ridge",
     description:
       "South African wine with balanced acidity and fruit-forward character.",
-    price: 20000,
+    price: 14999,
     category: "wines",
     image: "/images/cape-ridge.png",
     tags: ["Wine", "South African"],
@@ -856,7 +895,7 @@ export const drinks: Drink[] = [
     id: "wine-21",
     name: "Declan Red",
     description: "Rich red wine with deep color and full-bodied taste.",
-    price: 15000,
+    price: 12999,
     category: "wines",
     image:
       "https://barrels.ng/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-02-at-5.01.49-PM-removebg-preview.png",
@@ -867,7 +906,7 @@ export const drinks: Drink[] = [
     name: "Declan White",
     description:
       "Crisp white wine with fresh acidity and light, refreshing character.",
-    price: 15000,
+    price: 12999,
     category: "wines",
     image: "/images/declan-white.png",
     tags: ["White Wine", "Crisp"],
@@ -913,7 +952,7 @@ export const drinks: Drink[] = [
     name: "Fayrouz",
     description:
       "A refreshing, non-alcoholic malt drink with natural fruit flavors. Available in pear, pineapple, and apple varieties.",
-    price: 1500,
+    price: 1200,
     category: "non-alcoholic",
     image: "/images/fayrouz.png",
     tags: ["Malt", "Fruity"],
@@ -986,7 +1025,7 @@ export const drinks: Drink[] = [
     id: "non-alc-9",
     name: "Water",
     description: "Pure bottled water for hydration and refreshment.",
-    price: 1000,
+    price: 500,
     category: "non-alcoholic",
     image: "/images/water.png",
     tags: ["Water", "Pure"],
@@ -996,7 +1035,7 @@ export const drinks: Drink[] = [
     name: "Monster",
     description:
       "High-energy drink with caffeine and taurine for maximum energy boost.",
-    price: 3000,
+    price: 1500,
     category: "non-alcoholic",
     image: "/images/monster.png",
     tags: ["Energy", "Caffeinated"],
@@ -1016,7 +1055,7 @@ export const drinks: Drink[] = [
     name: "Amstel Malt",
     description:
       "Non-alcoholic malt drink with a rich, smooth taste and nutritional benefits.",
-    price: 1500,
+    price: 1200,
     category: "non-alcoholic",
     image: "/images/amstel-malt.png",
     tags: ["Malt", "Non-alcoholic"],
@@ -1026,7 +1065,7 @@ export const drinks: Drink[] = [
     name: "Maltina",
     description:
       "Popular Nigerian malt drink with vitamins and minerals for energy.",
-    price: 1500,
+    price: 1200,
     category: "non-alcoholic",
     image: "/images/maltina.png",
     tags: ["Malt", "Nigerian", "Energy"],
@@ -1035,7 +1074,7 @@ export const drinks: Drink[] = [
     id: "non-alc-14",
     name: "Chi Exotic",
     description: "Premium fruit juice blend with exotic tropical flavors.",
-    price: 3500,
+    price: 2500,
     category: "non-alcoholic",
     image: "/images/chi-exotic.png",
     tags: ["Juice", "Exotic", "Tropical"],
@@ -1238,7 +1277,7 @@ export const drinks: Drink[] = [
     id: "spirit-21",
     name: "Small Sky Vodka",
     description: "Premium vodka in a compact bottle with clean, crisp taste.",
-    price: 5000,
+    price: 4500,
     category: "spirits",
     image:
       "https://worldwineliquors.com/wp-content/uploads/2019/03/ddb9e080-6191-4115-9691-9ba2ad6263b4.png",
@@ -1248,7 +1287,7 @@ export const drinks: Drink[] = [
     id: "spirit-21",
     name: "Big Sky Vodka",
     description: "Premium vodka in a compact bottle with clean, crisp taste.",
-    price: 52000,
+    price: 26999,
     category: "spirits",
     image:
       "https://worldwineliquors.com/wp-content/uploads/2019/03/ddb9e080-6191-4115-9691-9ba2ad6263b4.png",
@@ -1259,7 +1298,7 @@ export const drinks: Drink[] = [
     name: "Small Label 5",
     description:
       "Compact bottle of Label 5 Scotch whisky with sweet vanilla notes and smooth finish.",
-    price: 5000,
+    price: 4499,
     category: "spirits",
     image: "/images/labe5.png",
     tags: ["Whisky", "Scotch", "Small"],
@@ -1269,7 +1308,7 @@ export const drinks: Drink[] = [
     name: "Small Don Royal",
     description:
       "Premium whisky in a smaller bottle with rich, smooth character.",
-    price: 6000,
+    price: 5000,
     category: "spirits",
     image: "/images/don-royale.png",
     tags: ["Whisky", "Small"],
@@ -1288,7 +1327,7 @@ export const drinks: Drink[] = [
     id: "spirit-25",
     name: "Absolut Vodka",
     description: "Swedish vodka with a clean, pure taste and smooth character.",
-    price: 7000,
+    price: 6000,
     category: "spirits",
     image: "/images/absolut-vodka.png",
     tags: ["Vodka", "Swedish"],
@@ -1338,7 +1377,7 @@ export const drinks: Drink[] = [
     name: "Small Jameson",
     description:
       "Triple-distilled Irish whiskey in a compact bottle with smooth, balanced flavor.",
-    price: 15000,
+    price: 10000,
     category: "spirits",
     image: "/images/jameson.png",
     tags: ["Whiskey", "Irish", "Small"],
@@ -1371,7 +1410,7 @@ export const drinks: Drink[] = [
     name: "Blue Nun",
     description:
       "German wine with a fresh, fruity character and balanced acidity.",
-    price: 8000,
+    price: 7000,
     category: "wines",
     image:
       "https://images.vivino.com/thumbs/zZMXymX7T1ed2vEw_VyyeQ_pl_375x500.png",
@@ -1422,7 +1461,7 @@ export const drinks: Drink[] = [
     name: "The Glenlivet 15 Years",
     description:
       "A classic single malt Scotch whisky aged 15 years in oak casks. Smooth and approachable with notes of citrus fruit, honey, and vanilla. Perfect for both new whisky drinkers and seasoned enthusiasts.",
-    price: 170000,
+    price: 150000,
     category: "spirits",
     image:
       "https://www.theglenlivet.com/wp-content/uploads/2021/10/15-year-old-single-malt-whisky-bottle-70cl-aspect-ratio-15-53.png",
@@ -1439,16 +1478,16 @@ export const drinks: Drink[] = [
     tags: ["Wine", "Red", "Sparkling", "Nigeria"],
   },
 
-  // {
-  //   id: "wine-27",
-  //   name: "Frontera",
-  //   description:
-  //     "Chilean wine with vibrant fruit flavors and smooth, approachable taste.",
-  //   price: 7000,
-  //   category: "wines",
-  //   image: "/images/frontera.png",
-  //   tags: ["Wine", "Chilean"],
-  // },
+  {
+    id: "wine-27",
+    name: "Frontera",
+    description:
+      "Chilean wine with vibrant fruit flavors and smooth, approachable taste.",
+    price: 14999,
+    category: "wines",
+    image: "/images/frontera.png",
+    tags: ["Wine", "Chilean"],
+  },
   {
     id: "wine-28",
     name: "4th Street",
@@ -1482,7 +1521,7 @@ export const drinks: Drink[] = [
     id: "wine-31",
     name: "Drostdy Hof",
     description: "South African wine with balanced flavors and smooth finish.",
-    price: 15000,
+    price: 14999,
     category: "wines",
     image: "/images/drostdy-hof.png",
     tags: ["Wine", "South African"],
@@ -1513,7 +1552,7 @@ export const drinks: Drink[] = [
     name: "Red Bull",
     description:
       "Premium energy drink with caffeine, taurine, and B-vitamins for energy boost.",
-    price: 3000,
+    price: 2500,
     category: "non-alcoholic",
     image: "https://pngfre.com/wp-content/uploads/Red-Bull-3.png",
     tags: ["Energy", "Caffeinated"],
